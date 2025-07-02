@@ -1,7 +1,3 @@
-// GET - 
-// POST 
-// PUT/PATCH -edit
-// DELETE
 
 async function fetchUsers() {
     try {
