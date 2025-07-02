@@ -15,6 +15,14 @@ async function fetchUsers() {
     }
 }
 
-}
+function displayUsers(users) {
+    const ul = document.getElementById("userList");
+    users.forEach(user => {
+        const li = document.createElement('li');
+        li.textContent = `${user.title} - ${user.body}`;
+       
+        ul.appendChild(li);
+    })
+};
 
 fetchUsers();

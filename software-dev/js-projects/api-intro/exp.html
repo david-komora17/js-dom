@@ -17,20 +17,6 @@
     </p>
     
 
-    <script>
-        const API_URL = "https://jsonplaceholder.typicode.com/posts" ;
-    
-        async function tryExperiment() {
-            const response = await fetch(API_URL);
-            const data = await response.json();
-            const{ id, title } = data[0];
-
-            document.getElementById('doc1').textContent = id;
-            document.getElementById('doc2').textContent = title;
-        };
-
-    tryExperiment();
-
-    </script>
+   
 </body>
 </html>
